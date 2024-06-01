@@ -22,7 +22,7 @@ RUN python -m venv /venv && \
     # Install the dependencies from requirements.txt
     /venv/bin/pip install -r /requirements.txt && \
     # Add a new user named 'app' without a password and without creating a home directory
-    adduser --disabled-password --no-create-home app \
+    adduser --disabled-password --no-create-home app
 # Update the PATH environment variable to prioritize the virtual environment's bin directory.
 # This ensures that Python and pip commands use the versions installed in the virtual environment by default.
 ENV PATH="/venv/bin:$PATH"
