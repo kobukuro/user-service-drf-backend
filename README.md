@@ -1,5 +1,12 @@
 # user-service-drf-backend
 
+## Run locally
+
+```
+docker compose build
+docker compose up -d
+```
+
 ## Create the virtual environment using the default Python interpreter
 
 ```
